@@ -1,0 +1,85 @@
+正式：https://anneng.chint.com/Login/login
+测试：http://101.71.247.22:9090/Login/login
+本地测试：http://127.0.0.1:8466/#/Application/index?t=9913
+新能源：http://127.0.0.1:7366/
+原型：https://8ssfkr.axshare.com/#g=1&p=%E5%90%88%E5%90%8C%E7%AE%A1%E7%90%86%EF%BC%88%E5%BE%85%E5%AE%A1%E6%A0%B8%EF%BC%89
+中来测试：http://101.132.173.115/Login/login#/stationcostchange/index?t=1352
+禅道：http://120.25.120.234:8089/zentao/bug-browse-10-0-assigntome-0.html
+本地服务商城：http://127.0.0.1:8366/#/Application/index?t=7351
+服务商城测试：http://10.121.2.147:9091/#/servicemall/index?t=6929
+服务商城原型：http://101.71.247.22:9090/assets/demos/service_demo/order_detail.html
+重置vpn：https://pws.astronergy.com
+主机：10.121.2.147
+账号：root
+密码：P@ssw0rd#2017
+系统管理员：账号admin   密码 654321
+安能账号：账号annengtest   密码654321
+测试代理商：账号test   密码654321
+测试供应商：账号testgys   密码654321
+测试数据库：
+
+jdbc.url=jdbc:oracle:thin:@10.121.9.28:1521/panoddb
+jdbc.url=jdbc:oracle:thin:@10.121.1.99:1521/panoddb
+jdbc.username=panodda
+jdbc.password=ADMIN123
+#jdbc.url=jdbc:oracle:thin:@120.25.120.234:1521/orcl
+#jdbc.username=panodda
+#jdbc.password=ADMIN123
+查询权限数据库
+安能 10.121.2.130/panoddb 
+SFINEREPORT   
+df5@24dfdDSe
+panodda
+
+#jdbc.url=jdbc:oracle:thin:@10.121.2.130:1521/panoddb
+#jdbc.username=panodda
+#jdbc.password=8D9sf28@F
+admin
+@nNengAdM1n@)@)
+
+crm正式数据：
+jdbc.url=jdbc:oracle:thin:@10.121.2.168:1521/anxwgsy
+jdbc.username=panodda
+jdbc.password=8D9sf28@F
+
+
+
+批量终止工单：https://anneng.chint.com/#/gfdloadmanage/dealStopList
+crm调试：http://127.0.0.1:8366/#/OrderOutApply/test
+	     https://anneng.chint.com/#/OrderOutApply/test
+长期应收调试：http://127.0.0.1:8366/#/gfdafterloadmanage/testYeaymonth?testtime=2020-12
+代理商区域授权到期自动停用测试：http://127.0.0.1:8366/#/agentscreate/test?testdate=2020-12-30
+管控设置管理：http://101.71.247.22:9090/#/Controlmanagement/testJob
+电站设计方案：http://127.0.0.1:8366/#/basesetting/DZFN_test?orderid=234499
+充电桩批次生成验收单：http://101.71.247.22:9090/#/CompleteCheck/testDays
+
+生成批量还款单：http://101.71.247.22:9090/#/gfdafterloadmanage/test2?gfdtype=101&fromtype=1&testtime=2020-10-25
+
+1、参数：biztype：业务类型：101-》工行、110-》浙行
+	  workcode：工单单号，可不传，不传查所有满足条件的单据
+还款信息更新：http://101.71.247.22:9090/#/gfdloadmanage/updateRepaymentInfo?biztype=101&workcode=GFD110000976
+
+2、参数：biztype：业务类型：101-》工行、110-》浙行
+		 fromtype：来源类型：1、商城下单，2托管电站3、安益宝销售
+	     workcode：工单单号，可不传，不传查所有满足条件的单据
+		 注意：工行托管在信用卡登记完成后生成还款信息，其他类型在缴纳预存金后生成还款记录
+			   浙行托管在放款完成后生成还款记录，其他类型在缴纳预存金后生成还款记录
+生成还款信息：http://101.71.247.22:9090/#/gfdloadmanage/createRepaymentInfo?biztype=101&fromtype=2&workcode=GFD10021614
+https://anneng.chint.com/#/gfdloadmanage/createRepaymentInfo?biztype=101&fromtype=2&workcode=GFD10021614
+biztype：101 fromtype：1 ---》工行商城
+biztype：101 fromtype：2 ---》工行托管
+biztype：101 fromtype：5 ---》工行安益宝
+biztype：110 fromtype：1 ---》浙行商城
+biztype：110 fromtype：2 ---》浙行托管
+biztype：110 fromtype：5 ---》浙行安益宝
+crm返修直发配件申请重推crm:
+https://anneng.chint.com/#/MmRepairPartApply/sendPartInterface?
+info.partapplyid=3110&info.applyno=NSP202102020002&info.fromwhid=1160&info.logisticsno=无&info.logisticscompany=无
+
+http://127.0.0.1:8866/#/AnMaterialPurchase/updateNeedInfoTest?adid=184175&userid=5378
+
+[root@testxwgsy-02 astronergy_9090]# vi conf/webapp.conf 
+[root@testxwgsy-02 astronergy_9090]# curl http://10.121.9.4:8091/CRMToAnApp.asmx
+
+
+   
